@@ -72,7 +72,7 @@ const createBlogs = async function (req, res) {
     const blogData ={
       title,body,authorId,category,
       isPublished:isPublished ? isPublished:true,
-      publishedAt:isPublished ? new data():null
+      publishedAt:isPublished ? new Date():null
     }
 
     if(tags){
@@ -355,4 +355,3 @@ module.exports = {
     deleteBlogByBlogId,
     deleteBlogByParam
 } 
-Footer
